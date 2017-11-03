@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    UIWebView *myWebView;
+}
+@property (nonatomic, retain) UIWebView *myWebView;
 
 
 @end

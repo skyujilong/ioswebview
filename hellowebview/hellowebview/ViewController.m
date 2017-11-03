@@ -13,10 +13,21 @@
 @end
 
 @implementation ViewController
+@synthesize myWebView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    // UIScreen能够获取设备的相关信息
+    myWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0,300,[UIScreen mainScreen].bounds.size.width,400)];
+    
+    NSString *urlAddr = @"https://www.baidu.com";
+    NSURL *url = [NSURL URLWithString:urlAddr];
+    NSURLRequest *reqObj = [NSURLRequest requestWithURL:url];
+    [myWebView loadRequest:reqObj];
+//    myWebView.delegate = self;
+    [self.view addSubview:myWebView];
+    
 }
 
 
