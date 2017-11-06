@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     // UIScreen能够获取设备的相关信息
+    /* 加载网络请求的方案
     myWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0,300,[UIScreen mainScreen].bounds.size.width,400)];
     
     NSString *urlAddr = @"https://www.baidu.com";
@@ -27,6 +28,21 @@
     [myWebView loadRequest:reqObj];
 //    myWebView.delegate = self;
     [self.view addSubview:myWebView];
+     */
+    
+    /* 加载本地的方案  */
+    
+    myWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0,300,[UIScreen mainScreen].bounds.size.width,400)];
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSString *htmlPath = [path stringByAppendingString:@"/demo.html"];
+    
+    NSLog(@"11111111%@",htmlPath);
+    NSString *htmlString = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
+    NSLog(@"html内容为%@",htmlString);
+//    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    [myWebView loadHTMLString:htmlString baseURL:nil];
+    [self.view addSubview:myWebView];
+    
     
 }
 

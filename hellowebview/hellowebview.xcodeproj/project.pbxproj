@@ -15,6 +15,7 @@
 		79BE77B91FA99D0D003F1E9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE77B81FA99D0D003F1E9C /* main.m */; };
 		79BE77C31FA99D0D003F1E9C /* hellowebviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE77C21FA99D0D003F1E9C /* hellowebviewTests.m */; };
 		79BE77CE1FA99D0D003F1E9C /* hellowebviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE77CD1FA99D0D003F1E9C /* hellowebviewUITests.m */; };
+		79BE77E41FB04153003F1E9C /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 79BE77E31FB04153003F1E9C /* demo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		79BE77CD1FA99D0D003F1E9C /* hellowebviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hellowebviewUITests.m; sourceTree = "<group>"; };
 		79BE77CF1FA99D0D003F1E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79BE77DC1FA9A27F003F1E9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79BE77E31FB04153003F1E9C /* demo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		79BE779D1FA99D0D003F1E9C = {
 			isa = PBXGroup;
 			children = (
+				79BE77E21FB04104003F1E9C /* New Group */,
 				79BE77A81FA99D0D003F1E9C /* hellowebview */,
 				79BE77C11FA99D0D003F1E9C /* hellowebviewTests */,
 				79BE77CC1FA99D0D003F1E9C /* hellowebviewUITests */,
@@ -140,6 +143,14 @@
 				79BE77DC1FA9A27F003F1E9C /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79BE77E21FB04104003F1E9C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				79BE77E31FB04153003F1E9C /* demo.html */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79BE77B61FA99D0D003F1E9C /* LaunchScreen.storyboard in Resources */,
+				79BE77E41FB04153003F1E9C /* demo.html in Resources */,
 				79BE77B31FA99D0D003F1E9C /* Assets.xcassets in Resources */,
 				79BE77B11FA99D0D003F1E9C /* Main.storyboard in Resources */,
 			);
